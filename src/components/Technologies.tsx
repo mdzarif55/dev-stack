@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import type { ItechType } from "../techTypes";
 import TechnologyCard from "./TechnologyCard";
 import Stack from "./Stack";
+import toast from "react-hot-toast";
 
 interface TechnologiesProps {
   techPromise: Promise<ItechType[]>;
@@ -21,9 +22,10 @@ const Technologies = ({ techPromise }: TechnologiesProps) => {
       if (isSelected) {
         return previousStack;
       }
-
+      
       return [...previousStack, technology];
     });
+    toast.success(`${technology.name} added to your stack!`);
   };
 
   const handleRemove = (technology: ItechType) => {

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Hero from './components/Hero';
 import Technologies from './components/Technologies';
+import { Toaster } from 'react-hot-toast';
 
 const techFetch = async () => {
   const res = fetch('/data.json');
@@ -16,12 +17,13 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
+      <Toaster position="bottom-right" />
+      <Navbar />
+      <Hero />
       <Suspense fallback={<h2>Loading....</h2>}>
-        <Technologies techPromise= {techPromise} />
+        <Technologies techPromise={techPromise} />
       </Suspense>
-      <Footer/>
+      <Footer />
     </>
   )
 }
