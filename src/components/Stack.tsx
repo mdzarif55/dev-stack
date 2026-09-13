@@ -15,7 +15,6 @@ const Stack = ({
   return (
     <aside className="h-fit rounded-xl border border-gray-100 bg-white p-4 shadow-sm">
 
-      {/* Header */}
       <h2 className="text-sm font-semibold text-slate-900">
         Your Stack
       </h2>
@@ -25,7 +24,6 @@ const Stack = ({
         {selectedStack.length !== 1 ? "ies" : ""} Selected
       </p>
 
-      {/* Empty */}
       {selectedStack.length === 0 ? (
 
         <div className="mt-5 flex min-h-[80px] items-center justify-center rounded-lg border border-dashed border-gray-200">
@@ -38,7 +36,6 @@ const Stack = ({
 
         <>
 
-          {/* Selected Technologies */}
           <div className="mt-4 space-y-2">
 
             {selectedStack.map((technology) => (
@@ -48,14 +45,12 @@ const Stack = ({
                 className="flex items-center gap-2 rounded-lg border border-gray-100 p-2"
               >
 
-                {/* Icon */}
                 <img
                   src={technology.icon}
                   alt={technology.name}
                   className="h-5 w-5 object-contain"
                 />
 
-                {/* Name + Category */}
                 <div className="min-w-0 flex-1">
 
                   <p className="truncate text-[12px] font-medium text-slate-900">
@@ -68,7 +63,6 @@ const Stack = ({
 
                 </div>
 
-                {/* Remove */}
                 <button
                   onClick={() => onRemove(technology)}
                   className="text-[25px] text-gray-300 transition hover:text-red-500"
@@ -83,7 +77,6 @@ const Stack = ({
 
           </div>
 
-          {/* Remove All */}
           <button
             onClick={onRemoveAll}
             className="mt-5 w-full rounded-md border border-red-200 py-2 text-[12px] font-medium text-red-500 transition hover:bg-red-50"

@@ -1,6 +1,7 @@
 import { use, useState } from "react";
 import type { ItechType } from "../techTypes";
 import TechnologyCard from "./TechnologyCard";
+import Stack from "./Stack";
 
 interface TechnologiesProps {
   techPromise: Promise<ItechType[]>;
@@ -77,6 +78,11 @@ const Technologies = ({ techPromise }: TechnologiesProps) => {
 
           </div>
 
+          <Stack
+            selectedStack={selectedStack}
+            onRemove={handleRemove}
+            onRemoveAll={handleRemoveAll}
+          />
 
         </div>
       </div>
