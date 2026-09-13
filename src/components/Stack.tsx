@@ -26,8 +26,8 @@ const Stack = ({
 
       {selectedStack.length === 0 ? (
 
-        <div className="mt-5 flex min-h-[80px] items-center justify-center rounded-lg border border-dashed border-gray-200">
-          <p className="text-center text-[8px] text-gray-300">
+        <div className="mt-5 flex min-h-[80px] items-center justify-center rounded-lg border border-dashed border-gray-00">
+          <p className="text-center text-[12px] text-gray-400">
             Your stack is empty.
           </p>
         </div>
