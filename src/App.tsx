@@ -1,7 +1,7 @@
 import { Suspense, useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Hero from './components/hero';
+import Hero from './components/Hero';
 import Technologies from './components/Technologies';
 
 const techFetch = async () => {

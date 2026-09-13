@@ -36,18 +36,17 @@ const TechnologyCard = ({
       </div>
 
 
-      <h2 className="mt-3 text-sm font-semibold text-slate-900">
+      <h2 className="mt-3 text-[16px] font-semibold text-slate-900">
         {technology.name}
       </h2>
 
-      {/* Description */}
-      <p className="mt-1 line-clamp-2 text-[9px] leading-4 text-gray-400">
+      <p className="mt-1 line-clamp-2 text-[10px] leading-4 text-gray-400">
         {technology.description}
       </p>
 
       <div className="mt-auto">
 
-        <div className="mb-2 mt-3 flex items-center justify-between text-[10px]">
+        <div className="mb-2 mt-3 flex items-center justify-between text-[11px]">
 
           <span className="rounded bg-gray-100 px-2 py-1 text-gray-500">
             {technology.category}

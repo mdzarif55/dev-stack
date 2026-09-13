@@ -5,7 +5,6 @@ const Hero = () => {
     <section className="bg-white">
       <div className="mx-auto flex max-w-6xl flex-col px-6 py-10 md:min-h-[calc(100vh-64px)] md:flex-row md:items-center md:py-0">
 
-        {/* Text */}
         <div className="w-full md:w-1/2">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-5xl">
             Build Your Ideal
@@ -33,7 +32,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Image */}
         <div className="mt-10 flex w-full justify-center md:mt-0 md:w-1/2">
           <img
             src={banner}
