@@ -1,5 +1,5 @@
 import { use, useState } from "react";
-import type { ItechType } from "../techTypes";
+import type { ItechType } from "../types/techType";
 import TechnologyCard from "./TechnologyCard";
 import Stack from "./Stack";
 import toast from "react-hot-toast";

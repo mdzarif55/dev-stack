@@ -1,4 +1,4 @@
-import type { ItechType } from "../techTypes";
+import type { ItechType } from "../types/techType";
 
 interface TechnologyCardProps {
   technology: ItechType;

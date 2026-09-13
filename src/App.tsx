@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react'
+import { Suspense,  } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Hero from './components/Hero';
